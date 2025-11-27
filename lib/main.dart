@@ -34,11 +34,19 @@ void main() {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset('images/logo.png', width: 100, height: 100),
-              const SizedBox(height: 24),
+            Image.asset('images/applogo.png', width: 150),
+            const SizedBox(height: 4),
               Text('Hello, Flutter!', style: TextStyle(fontSize: 24)),
               SizedBox(height: 12),
-              Text('Hello, Dart!'),
+            Text(
+              'Hello, Dart!',
+              style: TextStyle(
+                fontSize: 20,
+                fontFamily: 'Poppins',
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            Icon(Icons.flutter_dash, size: 48, color: Colors.blue),
             ],
           ),
       ),
